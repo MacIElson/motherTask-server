@@ -1,4 +1,4 @@
-# olumni-server
+# mommyApp-server
 
 ## API
 
@@ -101,35 +101,11 @@ Get number of tasks completed by user. Returns:
 }
 ```
 
-&#x20;<a href="#api-GET-username-getPosts-postIDs" name="api-GET-username-getPosts-postIDs">#</a> <b>GET</b> /:username/getPosts/`:postIDs`  
-Get posts ID(s). eg. /maci/getPosts/52745d971e7d50211b000001&52745d971e7d50211c000001 Returns: 
-
-
-```js
-{
-  "posts": [
-    {
-      "parent": "Carpe",
-      "parent": "Carpe",
-      "username": "...",
-      "date": "...time in ms...",
-      "lastDate": "...time in ms...",
-      "message": "Hello Carpe!",
-      "viewers": "public" or "mingram&clee&apatterson",
-      "reply": "false" or "true",
-      "resolved": "false" or "true"
-      _id: "52745d971e7d50211b000001"
-    }
-  ]
-}
-```
-
-&#x20;<a href="#api-POST-postID-completed" name="api-POST-postID-completed">#</a> <b>POST</b> /`:postID`/completed 
+&#x20;<a href="#api-POST-postID-completed" name="api-POST-taskID-completed">#</a> <b>POST</b> /`:taskID`/completed 
 Set completed status of task. No payload needed.
 
-&#x20;<a href="#api-POST-postID-removeTask" name="api-POST-postID-removeTask">#</a> <b>POST</b> /`:postID`/removeTask 
+&#x20;<a href="#api-POST-postID-removeTask" name="api-POST-taskID-removeTask">#</a> <b>POST</b> /`:taskID`/removeTask 
 Remove Task. No payload needed.
-
 
 &#x20;<a href="#api-DELETE-delAllTasks321" name="api-DELETE-delAllTasks321">#</a> <b>DELETE</b> /delAllTasks321
 Delete all Tasks. No payload needed.
