@@ -209,7 +209,6 @@ app.get('/:username/getTasksCompleted', function (req, res) {
     username: validateShort(req.params.username),
     completed: true
   };
-  console.log(db.tasks.count(query));
   db.tasks.find(query).count(function(err, count) {
     console.log(count);
     res.json({"tasksCompleted": count});
